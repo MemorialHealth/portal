@@ -35,6 +35,7 @@ html, body { background: $grey-mid;  color: $text-grey; @include font-roboto; }
 .warning {background: $warning !important; }
 .success {background: $success !important; }
 
+.text-upper { text-transform: uppercase; }
 
 .text-danger {color: $danger !important; }
 .text-warning {color: $warning !important; }

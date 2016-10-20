@@ -27,6 +27,9 @@ html, body {
 .success {
   background: #4eb367 !important; }
 
+.text-upper {
+  text-transform: uppercase; }
+
 .text-danger {
   color: #e05353 !important; }
 
