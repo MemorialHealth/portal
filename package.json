@@ -1,0 +1,26 @@
+{
+  "name": "proto_portal",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MemorialHealth/proto_portal.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MemorialHealth/proto_portal/issues"
+  },
+  "homepage": "https://github.com/MemorialHealth/proto_portal#readme",
+  "dependencies": {
+    "body-parser": "^1.15.2",
+    "express": "^4.14.0",
+    "pug": "^2.0.0-beta6"
+  }
+}

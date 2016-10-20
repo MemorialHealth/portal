@@ -1,0 +1,72 @@
+html
+    head
+        title title
+        link(rel="stylesheet", href="https://fonts.googleapis.com/css?family=Roboto:300,400,500")
+        link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.css")
+        link(rel="stylesheet", href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css")
+        link(rel="stylesheet", href="https://fonts.googleapis.com/icon?family=Material+Icons")
+        link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/9.0.0/nouislider.min.css")
+        link(rel="stylesheet", href="css/main.css")
+    body
+        nav.nav-menu
+            ul.list-unstyled.nav-menuList
+                li
+                    i.material-icons.md-36 home
+                li
+                    i.material-icons.md-36 bubble_chart
+                    div.nav-submenu
+                        h5 Productivity
+                        input.search(type="search", placeholder="Search...")
+
+                        ul.list-unstyled.submenu-list
+                            li
+                                i.material-icons dashboard
+                                span Financial Summary
+                            li
+                                i.material-icons business_center
+                                span Adjustment Tool
+                            li
+                                i.material-icons business_center
+                                span Productivity Tool
+                li
+                    i.material-icons.md-36 equalizer
+                li
+                    i.material-icons.md-36 folder_shared
+                li
+                    i.material-icons.md-36 monetization_on
+            
+
+
+        nav.nav-toolbar
+            .nav-toolbar-content
+                .notifications
+                    .btn-flat.purple Notifications
+                        span.caret.caret-purple
+                    span(style="padding-left: 15px;") Some notifications will scroll through here
+                .profile-menu
+                    span.profile-user Aaron
+                    i.material-icons.md-24 person_pin
+
+        .content-wrapper
+            block content
+        
+
+        script(src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js")
+        script(src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js")
+        script(src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js")
+        
+        script(src="https://static.fusioncharts.com/code/latest/fusioncharts.js?cacheBust=56")
+        script(src="https://static.fusioncharts.com/code/latest/fusioncharts.powercharts.js?cacheBust=56")
+        script(src="https://static.fusioncharts.com/code/latest/themes/fusioncharts.theme.fint.js?cacheBust=56")
+
+        script(src="https://code.highcharts.com/stock/highstock.js")
+        script(src="https://code.highcharts.com/highcharts-more.js")
+        script(src="https://code.highcharts.com/modules/solid-gauge.js")
+        script(src="https://code.highcharts.com/stock/modules/exporting.js")
+        script(src="https://code.highcharts.com/maps/modules/map.js")
+        script(src="https://code.highcharts.com/maps/modules/exporting.js")
+        script(src="https://code.highcharts.com/mapdata/countries/us/us-oh-all.js")
+        
+        script(src="https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/9.0.0/nouislider.min.js")
+
+        block scripts

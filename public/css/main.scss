@@ -1,0 +1,218 @@
+$blue-bright: rgb(0, 176, 240);
+$grey-darker:rgb(38,38,38);
+$grey-dark: rgb(46,46,46);
+$grey-mid: rgb(64,64,64);
+$grey-light: rgb(89,89,89);
+
+$purple: #795aac;
+
+$text-grey: rgb(166,166,166);
+
+
+@mixin font-roboto
+{
+    font-family: 'Roboto', sans-serif;
+}
+
+// Store how wide our left sidebar is
+$menu-width: 80px;
+// Store how tall our profile toolbar is
+$toolbar-height: 40px;
+
+html, body { background: $grey-mid;  color: $text-grey; @include font-roboto; }
+
+.material-icons.md-18 { font-size: 18px; }
+.material-icons.md-24 { font-size: 24px; }
+.material-icons.md-36 { font-size: 36px; }
+.material-icons.md-48 { font-size: 48px; }
+
+
+.purple
+{
+    background: $purple !important;
+    
+}
+
+.fusioncharts-container svg
+{
+    background: none!important;
+}
+
+// Our side navigation
+.nav-menu
+{
+    background: $grey-darker;
+    width: $menu-width;
+    height:100%;
+    position:fixed;
+    top:0;
+    left:0;
+
+    text-align: center;
+    color: $text-grey;
+    z-index: 10;
+    ul { height:100%; }
+    .nav-menuList > li
+    {
+        padding:10px 0;
+        
+    }
+
+    .nav-menuList > li:hover:not(:first-child) > i
+    {
+        color:$blue-bright;
+        
+    }
+    .nav-menuList > li:hover:not(:first-child)
+    {
+        background: $grey-light;
+    }
+
+    .nav-menuList > li:first-child
+    {
+        background: rgb(0, 176, 240);
+        color:#fff;
+    }
+
+    li:hover
+    {
+        .nav-submenu
+        {
+            transform: translateX($menu-width);
+        }
+    }
+    .nav-submenu
+    {
+        position: absolute;
+        top: 0;
+        height: 100%;
+        width: 200px;
+        background: $grey-dark;
+        transition: all .3s ease-in-out;
+        transform: translateX(-100%);
+        z-index: -1;
+
+        & > h5 { text-transform: uppercase; }
+
+        .search
+        {
+            width: 100%;
+            border: 0;
+            outline: none;
+            background:$grey-darker;
+            text-indent: 10px;
+        }
+
+        .submenu-list
+        {
+            text-align:left;
+            li { padding: 10px 15px; cursor:pointer; }
+            span { padding-left: 10px; }
+            i { vertical-align: middle; }
+
+            li:hover
+            {
+                color:$blue-bright;
+                background: $grey-light;
+            }
+        }
+    }
+}
+
+// Our header toolbar for notification and profile
+.nav-toolbar
+{
+    position:fixed;
+    top: 0;
+    width:100%;
+    height: $toolbar-height;
+    background: $grey-light;
+    z-index: 8;
+    padding-left: $menu-width;
+
+    line-height: $toolbar-height;
+    
+    .notifications
+    {
+        float:left;
+    }
+
+    .profile-menu
+    {
+        float:right;
+        padding:0 10px; 
+
+        .profile-user 
+        {
+            padding: 0 10px;
+        }
+
+        i { line-height: inherit; vertical-align: middle; }
+    }
+}
+
+.content-wrapper
+{
+    padding-left: $menu-width;
+    padding-top: $toolbar-height;
+}
+
+.btn-flat
+{
+    display: inline-block;
+    background: $blue-bright;
+    color:white;
+    padding: 0 15px;
+    position:relative;
+}
+.btn-flat .caret-purple
+{
+    border-left-color:$purple;
+}
+.caret
+{
+    width: 0;
+    position: absolute;
+    right: -10px;
+    top: 8px;
+    height: 0;
+    border-style: solid;
+    border-width: 10px 0 10px 10px;
+    border-color: transparent transparent transparent #2096cd;
+}
+
+
+.col-header
+{
+    font-size: 1.2em;
+    text-align: center;
+    font-family: Roboto;
+    font-weight: 100;
+    padding: 15px 0;
+}
+
+.icon-list
+{
+    float:left;
+    padding:5px;
+    margin-top:0;
+    transition: margin-top 200ms ease-in-out;
+    cursor: pointer;
+}
+
+.icon-list:hover
+{
+    margin-top: -5px;
+}
+
+.heatmapTable {font-size:10px;width:100%;border-collapse:collapse;}
+.heatmapTable td,.heatmapTable th {padding:8px 3px;text-align: center;transition:ease all 0.4s;}
+.heatmapTable tr:first-child th {padding:3px;}
+.heatmapTable th:first-child {text-align: right;padding-right:5px;}
+.heatmapTable td {border: 1px solid #fff!important;background: rgba(255,255,255,0.1);}
+#heatmapSlider { 
+    margin: 0 15px 0 65px;
+}
+#heatmapValues {color:rgba(255,255,255,0.7);font-size:12px;margin: 12px 0px 0 50px;text-align: center;}
+.heatmapValue {display:inline;width:40px;text-align: center;font-weight:bold;color:#fff;}
+

@@ -1,0 +1,173 @@
+html, body {
+  background: #404040;
+  color: #a6a6a6;
+  font-family: 'Roboto', sans-serif; }
+
+.material-icons.md-18 {
+  font-size: 18px; }
+
+.material-icons.md-24 {
+  font-size: 24px; }
+
+.material-icons.md-36 {
+  font-size: 36px; }
+
+.material-icons.md-48 {
+  font-size: 48px; }
+
+.purple {
+  background: #795aac !important; }
+
+.fusioncharts-container svg {
+  background: none !important; }
+
+.nav-menu {
+  background: #262626;
+  width: 80px;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  text-align: center;
+  color: #a6a6a6;
+  z-index: 10; }
+  .nav-menu ul {
+    height: 100%; }
+  .nav-menu .nav-menuList > li {
+    padding: 10px 0; }
+  .nav-menu .nav-menuList > li:hover:not(:first-child) > i {
+    color: #00b0f0; }
+  .nav-menu .nav-menuList > li:hover:not(:first-child) {
+    background: #595959; }
+  .nav-menu .nav-menuList > li:first-child {
+    background: #00b0f0;
+    color: #fff; }
+  .nav-menu li:hover .nav-submenu {
+    transform: translateX(80px); }
+  .nav-menu .nav-submenu {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 200px;
+    background: #2e2e2e;
+    transition: all .3s ease-in-out;
+    transform: translateX(-100%);
+    z-index: -1; }
+    .nav-menu .nav-submenu > h5 {
+      text-transform: uppercase; }
+    .nav-menu .nav-submenu .search {
+      width: 100%;
+      border: 0;
+      outline: none;
+      background: #262626;
+      text-indent: 10px; }
+    .nav-menu .nav-submenu .submenu-list {
+      text-align: left; }
+      .nav-menu .nav-submenu .submenu-list li {
+        padding: 10px 15px;
+        cursor: pointer; }
+      .nav-menu .nav-submenu .submenu-list span {
+        padding-left: 10px; }
+      .nav-menu .nav-submenu .submenu-list i {
+        vertical-align: middle; }
+      .nav-menu .nav-submenu .submenu-list li:hover {
+        color: #00b0f0;
+        background: #595959; }
+
+.nav-toolbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 40px;
+  background: #595959;
+  z-index: 8;
+  padding-left: 80px;
+  line-height: 40px; }
+  .nav-toolbar .notifications {
+    float: left; }
+  .nav-toolbar .profile-menu {
+    float: right;
+    padding: 0 10px; }
+    .nav-toolbar .profile-menu .profile-user {
+      padding: 0 10px; }
+    .nav-toolbar .profile-menu i {
+      line-height: inherit;
+      vertical-align: middle; }
+
+.content-wrapper {
+  padding-left: 80px;
+  padding-top: 40px; }
+
+.btn-flat {
+  display: inline-block;
+  background: #00b0f0;
+  color: white;
+  padding: 0 15px;
+  position: relative; }
+
+.btn-flat .caret-purple {
+  border-left-color: #795aac; }
+
+.caret {
+  width: 0;
+  position: absolute;
+  right: -10px;
+  top: 8px;
+  height: 0;
+  border-style: solid;
+  border-width: 10px 0 10px 10px;
+  border-color: transparent transparent transparent #2096cd; }
+
+.col-header {
+  font-size: 1.2em;
+  text-align: center;
+  font-family: Roboto;
+  font-weight: 100;
+  padding: 15px 0; }
+
+.icon-list {
+  float: left;
+  padding: 5px;
+  margin-top: 0;
+  transition: margin-top 200ms ease-in-out;
+  cursor: pointer; }
+
+.icon-list:hover {
+  margin-top: -5px; }
+
+.heatmapTable {
+  font-size: 10px;
+  width: 100%;
+  border-collapse: collapse; }
+
+.heatmapTable td, .heatmapTable th {
+  padding: 8px 3px;
+  text-align: center;
+  transition: ease all 0.4s; }
+
+.heatmapTable tr:first-child th {
+  padding: 3px; }
+
+.heatmapTable th:first-child {
+  text-align: right;
+  padding-right: 5px; }
+
+.heatmapTable td {
+  border: 1px solid #fff !important;
+  background: rgba(255, 255, 255, 0.1); }
+
+#heatmapSlider {
+  margin: 0 15px 0 65px; }
+
+#heatmapValues {
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 12px;
+  margin: 12px 0px 0 50px;
+  text-align: center; }
+
+.heatmapValue {
+  display: inline;
+  width: 40px;
+  text-align: center;
+  font-weight: bold;
+  color: #fff; }
