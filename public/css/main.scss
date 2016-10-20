@@ -98,7 +98,9 @@ html, body { background: $grey-mid;  color: $text-grey; @include font-roboto; }
         transition: all .3s ease-in-out;
         transform: translateX(-100%);
         z-index: -1;
-
+        
+        box-shadow: 6px 0 5px -2px #262626;
+        
         & > h5 { text-transform: uppercase; }
 
         .search
