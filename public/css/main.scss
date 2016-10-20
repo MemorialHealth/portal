@@ -4,6 +4,9 @@ $grey-dark: rgb(46,46,46);
 $grey-mid: rgb(64,64,64);
 $grey-light: rgb(89,89,89);
 
+$success: rgb(78, 179, 103);
+$warning: rgb(230, 191, 77);
+$danger: rgb(224, 83, 83);
 $purple: #795aac;
 
 $text-grey: rgb(166,166,166);
@@ -27,11 +30,15 @@ html, body { background: $grey-mid;  color: $text-grey; @include font-roboto; }
 .material-icons.md-48 { font-size: 48px; }
 
 
-.purple
-{
-    background: $purple !important;
-    
-}
+.purple {background: $purple !important; }
+.danger {background: $danger !important; }
+.warning {background: $warning !important; }
+.success {background: $success !important; }
+
+
+.text-danger {color: $danger !important; }
+.text-warning {color: $warning !important; }
+.text-success {color: $success !important; }
 
 .fusioncharts-container svg
 {
@@ -106,10 +113,15 @@ html, body { background: $grey-mid;  color: $text-grey; @include font-roboto; }
         .submenu-list
         {
             text-align:left;
-            li { padding: 10px 15px; cursor:pointer; }
+            li { padding: 10px 15px; cursor:pointer; position:relative; }
             span { padding-left: 10px; }
             i { vertical-align: middle; }
-
+            .submenu-status
+            {
+                position: absolute;
+                right:2px;
+                top:7px;
+            }
             li:hover
             {
                 color:$blue-bright;

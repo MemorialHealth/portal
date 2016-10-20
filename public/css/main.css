@@ -18,6 +18,24 @@ html, body {
 .purple {
   background: #795aac !important; }
 
+.danger {
+  background: #e05353 !important; }
+
+.warning {
+  background: #e6bf4d !important; }
+
+.success {
+  background: #4eb367 !important; }
+
+.text-danger {
+  color: #e05353 !important; }
+
+.text-warning {
+  color: #e6bf4d !important; }
+
+.text-success {
+  color: #4eb367 !important; }
+
 .fusioncharts-container svg {
   background: none !important; }
 
@@ -65,11 +83,16 @@ html, body {
       text-align: left; }
       .nav-menu .nav-submenu .submenu-list li {
         padding: 10px 15px;
-        cursor: pointer; }
+        cursor: pointer;
+        position: relative; }
       .nav-menu .nav-submenu .submenu-list span {
         padding-left: 10px; }
       .nav-menu .nav-submenu .submenu-list i {
         vertical-align: middle; }
+      .nav-menu .nav-submenu .submenu-list .submenu-status {
+        position: absolute;
+        right: 2px;
+        top: 7px; }
       .nav-menu .nav-submenu .submenu-list li:hover {
         color: #00b0f0;
         background: #595959; }
