@@ -42,6 +42,10 @@ html, body {
 .fusioncharts-container svg {
   background: none !important; }
 
+a, a:visited, a:hover {
+  color: #a6a6a6;
+  text-decoration: none; }
+
 .nav-menu {
   background: #262626;
   width: 80px;
@@ -89,7 +93,7 @@ html, body {
         padding: 10px 15px;
         cursor: pointer;
         position: relative; }
-      .nav-menu .nav-submenu .submenu-list span {
+      .nav-menu .nav-submenu .submenu-list span, .nav-menu .nav-submenu .submenu-list a {
         padding-left: 10px; }
       .nav-menu .nav-submenu .submenu-list i {
         vertical-align: middle; }
@@ -98,8 +102,28 @@ html, body {
         right: 2px;
         top: 7px; }
       .nav-menu .nav-submenu .submenu-list li:hover {
-        color: #00b0f0;
+        color: #00b0f0 !important;
         background: #595959; }
+
+.action-list li {
+  height: 40px; }
+
+.action-list li i {
+  vertical-align: middle;
+  line-height: 40px;
+  cursor: pointer; }
+
+.action-list li:hover i {
+  color: #00b0f0; }
+
+.action-container {
+  clear: both;
+  max-height: 0;
+  transition: max-height 0.3s ease-in-out;
+  overflow: hidden; }
+
+.action-container.active {
+  max-height: 340px; }
 
 .nav-toolbar {
   position: fixed;

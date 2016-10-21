@@ -11,7 +11,8 @@ html
         nav.nav-menu
             ul.list-unstyled.nav-menuList
                 li
-                    i.material-icons.md-36 home
+                    a(href="/")
+                        i.material-icons.md-36(style="color:#fff") home
                 li
                     i.material-icons.md-36 bubble_chart
                     div.nav-submenu
@@ -21,7 +22,7 @@ html
                         ul.list-unstyled.submenu-list
                             li
                                 i.material-icons dashboard
-                                span Financial Summary
+                                a(href="/executive_summary", style="color:inherit") Financial Summary
                                 i.material-icons.submenu-status.text-danger error
                             li
                                 i.material-icons business_center

@@ -13,6 +13,10 @@ app.get('/', function(req, res){
     res.render('main', { title: 'MHS Portal' });
 });
 
+app.get('/executive_summary', function(req, res){
+    res.render('executive_summary', { title: 'MHS Portal' });
+});
+
 app.listen(port, function(){
     console.log('MHS Portal listening on port ' + port);
 });

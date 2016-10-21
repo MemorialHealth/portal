@@ -46,6 +46,12 @@ html, body { background: $grey-mid;  color: $text-grey; @include font-roboto; }
     background: none!important;
 }
 
+a, a:visited, a:hover
+{
+    color: $text-grey;
+    text-decoration: none;
+}
+
 // Our side navigation
 .nav-menu
 {
@@ -117,7 +123,7 @@ html, body { background: $grey-mid;  color: $text-grey; @include font-roboto; }
         {
             text-align:left;
             li { padding: 10px 15px; cursor:pointer; position:relative; }
-            span { padding-left: 10px; }
+            span, a { padding-left: 10px; }
             i { vertical-align: middle; }
             .submenu-status
             {
@@ -127,11 +133,39 @@ html, body { background: $grey-mid;  color: $text-grey; @include font-roboto; }
             }
             li:hover
             {
-                color:$blue-bright;
+                color:$blue-bright !important;
                 background: $grey-light;
             }
         }
     }
+}
+
+.action-list 
+{
+    li {height:40px;}
+    li i
+    {
+        vertical-align:middle;
+        line-height:40px;
+        cursor:pointer;
+    }
+    li:hover i
+    {
+        color: $blue-bright;
+    }
+}
+
+.action-container
+{
+    clear:both;
+    max-height:0;
+    transition:max-height 0.3s ease-in-out;
+    overflow: hidden;
+}
+
+.action-container.active
+{
+    max-height:340px;
 }
 
 // Our header toolbar for notification and profile
