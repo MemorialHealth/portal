@@ -1,0 +1,96 @@
+html
+    head
+        link(rel="stylesheet", href="https://fonts.googleapis.com/css?family=Roboto:300,700")
+        link(rel="stylesheet", href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css")
+        link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.css")
+        link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css")
+        style.
+            html, body { margin:0; padding:0; background: rgb(242,242,242); }
+            * { box-sizing: border-box; }
+            p, strong, h4 { font-family: 'Roboto', sans-serif; font-weight: 300; }
+            header { text-align:center; color:white; background: rgb(244,177,131); padding:20px 0; }
+            header h2, span.title {font-family: 'Roboto'; font-weight: 700; }
+            .container { width: 960px; margin: 0 auto; }
+            section { clear:both; padding:40px 0;}
+            .step { float: left; width: 33%; }
+            .step-icon { position:relative;  text-align:center; }
+            .step-icon strong { color:white; font-size:1em;}
+            span.title { font-size: 1.3em; padding-left: 20px; }
+            .objective { float:right; width:66%; }
+            .fa-custom { font-size: 1.5em; }
+            .fa-custom .fa-circle { color: rgb(244,177,131); }
+            .slick-list { width:960px; }
+            .slick-slide { height: inherit; }
+            .visual-title { font-family: 'Roboto'; font-weight: 300; color:white; text-align:center; }
+            a {text-decoration:none;}
+            .btn { padding: 10px 20px; color:white; background: rgb(244,177,131); border: 1px solid rgb(197,90,17);  }
+            .btn:hover { background: rgb(246,190,152); border: 1px solid rgb(244,177,131); }
+    body
+        header
+            h2 KPI Interview
+            h4 OUR TEAM AT YOUR SERVICE
+        
+        main
+            .container
+
+                section
+                    .step 
+                        span.step-icon.fa-stack.fa-custom
+                            i.fa.fa-circle.fa-stack-2x
+                            strong.fa-stack-1x 1
+                        span.title Our Mission
+                    .objective 
+                        p The Decision Support team is on a mission to give your data some personality.  You have been identified as part of an early adopter program to provide customized KPI’s visualizations.
+
+                section
+                        .step 
+                            span.step-icon.fa-stack.fa-custom
+                                i.fa.fa-circle.fa-stack-2x
+                                strong.fa-stack-1x 2
+                            span.title Explain KPIs
+                        .objective 
+                            p A key performance indicator (KPI) is a business metric used to evaluate factors that are crucial to the success of an organization.  This could be a visual showing this, that or the other thing that you do
+
+        
+                section
+                        .step 
+                            span.step-icon.fa-stack.fa-custom
+                                i.fa.fa-circle.fa-stack-2x
+                                strong.fa-stack-1x 3
+                            span.title Visualization
+                        .objective 
+                            p Have a peak at just some of the ways we can help illustrate those plain reports you receive every morning
+            div(style="background:#8a99a0; clear:both; padding: 20px 0;")
+                .container
+                    h3.visual-title Example KPI Visualizations
+                    div.visual-carousel
+                        each v in [1,2,3,4,5,6,7,8,9,10,11,12]
+                            div(style="margin:0 10px;")
+                                img(src="/media/kpi/" + v + ".jpg", alt="v")
+            .container
+                section(style="margin-bottom: 150px;")
+                        .step 
+                            span.step-icon.fa-stack.fa-custom
+                                i.fa.fa-circle.fa-stack-2x
+                                strong.fa-stack-1x 4
+                            span.title KPI Expert
+                        .objective 
+                            p Now that you are an expert in KPIs are you ready to get started.
+                            a.btn(href="https://docs.google.com/forms/d/e/1FAIpQLSdnNiK1-_qbryRNx7GErdB108UEFBS_YLZbrWr1CDML0mMU4Q/viewform") Get Started
+
+
+                
+
+
+        script(src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js")
+        script(src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.js")
+        script.
+            $('.visual-carousel').slick({
+                slidesToShow: 3,
+                slidesToScroll: 1,
+                dots: true,
+                infinite: true,
+                speed: 240,
+                cssEase: 'linear',
+                variableWidth: true
+            });

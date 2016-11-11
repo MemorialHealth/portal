@@ -17,6 +17,10 @@ app.get('/executive_summary', function(req, res){
     res.render('executive_summary', { title: 'MHS Portal' });
 });
 
+app.get('/survey/kpi_intro', function(req, res){
+    res.render('kpi_intro.pug', { title: 'KPI Survey' } );
+});
+
 app.listen(port, function(){
     console.log('MHS Portal listening on port ' + port);
 });
